@@ -77,7 +77,17 @@ The development server will start at [http://localhost:3000](http://localhost:30
 ```bash
 # Build for production / 构建生产版本
 pnpm build
+
+# Build and verify / 构建并验证
+pnpm build:full
+
+# Verify build output / 验证构建输出
+pnpm build:verify
 ```
+
+构建输出目录：`apps/web/out/`
+
+构建完成后，可以通过 `pnpm build:verify` 验证构建产物是否完整。
 
 ### Start Production Server / 启动生产服务器
 
